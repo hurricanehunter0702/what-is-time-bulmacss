@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hello Bulma!</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <link rel="stylesheet" href="styles/helpers.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <!-- <link rel="stylesheet" href="styles/debug.css"> -->
+</head>
+
+<body>
+
+  <!-- .hero -->
+  <section class="hero">
+
+    <!-- .hero-head -->
+    <div class="hero-head">
+      <nav class="navbar heading has-text-weight-bold" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a href="#" class="navbar-item">
+            <img src="images/EWiT_Logomark_Full_Color_Web.svg" class="heading__logo">
+          </a>
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="headNavbar">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div class="navbar-menu" id="headNavbar">
+          <div class="navbar-end">
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a href="#" class="navbar-link heading__menu-item">Time Converters</a>
+              <div class="navbar-dropdown">
+                <a href="#" class="navbar-item">Converter 1</a>
+                <a href="#" class="navbar-item">Converter 2</a>
+                <a href="#" class="navbar-item">Converter 3</a>
+              </div>
+            </div>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a href="#" class="navbar-link heading__menu-item">World Clock</a>
+              <div class="navbar-dropdown">
+                <a href="#" class="navbar-item">Clock 1</a>
+                <a href="#" class="navbar-item">Clock 2</a>
+                <a href="#" class="navbar-item">Clock 3</a>
+              </div>
+            </div>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a href="#" class="navbar-link heading__menu-item">Calendar Dates</a>
+              <div class="navbar-dropdown">
+                <a href="#" class="navbar-item">Date 1</a>
+                <a href="#" class="navbar-item">Date 2</a>
+                <a href="#" class="navbar-item">Date 3</a>
+              </div>
+            </div>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a href="#" class="navbar-link heading__menu-item">Calculators</a>
+              <div class="navbar-dropdown">
+                <a href="#" class="navbar-item">Calculator 1</a>
+                <a href="#" class="navbar-item">Calculator 2</a>
+                <a href="#" class="navbar-item">Calculator 3</a>
+              </div>
+            </div>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a href="#" class="navbar-link heading__menu-item">Resources</a>
+              <div class="navbar-dropdown">
+                <a href="#" class="navbar-item">Resource 1</a>
+                <a href="#" class="navbar-item">Resource 2</a>
+                <a href="#" class="navbar-item">Resource 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- /.hero-head -->
+
+    <!-- .hero-body -->
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-one-third">
+            <div class="card current-time-card">
+              <div class="card-content">
+                <div class="content">
+                  <p class="title is-5 center">It is currently...</p>
+                  <p class="current-time-display center">3:52:24 PM</p>
+                  <div class="columns">
+                    <div class="column center">
+                      (Pacific Daylight Time)
+                    </div>
+                    <div class="column center">
+                      Military Time&nbsp;
+                      <div class="field">
+                        <input id="toggle" type="checkbox" class="is-hidden">
+                        <label for="toggle" class="toggle-button"></label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card hero-body__card">
+              <div class="card-content">
+                <div class="content">
+                  <p class="title is-6 center">Local Time in</p>
+                  <p class="hero-body__location is-6 center">Hawaii</p>
+                  <p class="hero-body__local-time is-5 center">12:52:24 PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card hero-body__card">
+              <div class="card-content">
+                <div class="content">
+                  <p class="title is-6 center">Local Time in</p>
+                  <p class="hero-body__location is-6 center">Texas</p>
+                  <p class="hero-body__local-time is-5 center">5:52:24 PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card hero-body__card">
+              <div class="card-content">
+                <div class="content">
+                  <p class="title is-6 center">Local Time in</p>
+                  <p class="hero-body__location is-6 center">New York City</p>
+                  <p class="hero-body__local-time is-5 center">6:52:24 PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card hero-body__card">
+              <div class="card-content">
+                <div class="content">
+                  <p class="title is-6 center">Local Time in</p>
+                  <p class="hero-body__location is-6 center">London</p>
+                  <p class="hero-body__local-time is-5 center">11:52:24 PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.hero-body -->
+
+  </section>
+  <!-- /.hero -->
+
+  <!-- .main -->
+  <section class="main">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-8 is-offset-2">
+          <div class="add-clock-to-your-site-card">
+            <div class="card">
+              <div class="card-content">
+                <div class="content">
+                  <div class="columns">
+                    <div class="column is-5">
+                      <h1 class="title">Add a Clock to Your Site</h1>
+                      <ul class="add-clock-to-your-site-card__desc">
+                        <li><i class="fas fa-check"></i> <em>Free, No Charge</em></li>
+                        <li><i class="fas fa-check"></i> <em>Local Time</em></li>
+                        <li><i class="fas fa-check"></i> <em>Constantly Updating</em></li>
+                      </ul>
+                    </div>
+                    <div class="column is-7">
+                      <div class="card code-content-card">
+                        <div class="card-body">
+                          <div class="card-content">
+                            <div class="content">
+                              <pre><code class="code-content-card__code">
+&lt;div style="display: flex; flex-direction: column; align-items: center; text-align:center;"&gt;&lt;p style="text-align:center;"&gt;&lt;strong&gt;&lt;a href="https://www.exactlywhatistime.com"style="color: black; text-decoration: none;"&gt;The current time is&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;&lt;iframe src="https://www.exactlywhatistime.com/clock" height="70"&gt;&lt;/iframe&gt;&lt;/div&gt;
+                            </code></pre>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-footer">
+                          <button class="button copy-to-clipboard-btn">
+                            <i class="fas fa-copy"></i> &nbsp; Copy to Clipboard
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="time-tools">
+            <div class="time-tools-title-container">
+              <h1 class="title time-tools-title center is-1">Time Tools & Calculators</h1>
+              <p class="subtitle time-tools-subtitle center mb-0">We’ve built enough time tools and calculators to make
+                Archimedes
+                proud</p>
+              <p class="subtitle time-tools-subtitle center"><em>(the dude essentially invented the clock).</em></p>
+            </div>
+            <div class="time-tools-content-container">
+              <div class="columns">
+                <div class="column">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-content">
+                        <div class="time-tools-card-title-container">
+                          <h2 class="time-tools-card-title">Time Before / From Specific Date Calculator</h2>
+                          <p class="time-tools-card-subtitle">Use the time converters below to turn any 12 hour time
+                            into
+                            military time, and vise versa.</p>
+                        </div>
+                        <hr />
+                        <div class="time-tools-card-body">
+                          <label for="military-time-input">Military Time to 12-Hour Time</label>
+                          <div class="columns">
+                            <div class="column is-8">
+                              <input class="input" id="military-time-input" />
+                            </div>
+                            <div class="column is-4">
+                              <button class="button">Convert</button>
+                            </div>
+                          </div>
+                        </div>
+                        <hr />
+                        <div class="time-tools-card-body">
+                          <label for="military-time-input">12-Hour Time to Military Time</label>
+                          <div class="columns">
+                            <div class="column is-8">
+                              <div class="field has-addons on-error">
+                                <p class="control">
+                                  <input class="input">
+                                </p>
+                                <div class="select">
+                                  <select>
+                                    <option>AM <i class="fas fa-angle-down"></i></option>
+                                    <option>PM <i class="fas fa-angle-down"></i></option>
+                                  </select>
+                                </div>
+                                </p>
+                              </div>
+                            </div>
+                            <div class="column is-4">
+                              <button class="button" disabled>Convert</button>
+                            </div>
+                          </div>
+                          <p class="error-msg">Enter time in the format of 00:00 in order to convert</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-content">
+                        <div class="time-tools-card-title-container">
+                          <h2 class="time-tools-card-title">Time Before / From Specific Date Calculator</h2>
+                          <p class="time-tools-card-subtitle">This date calculator is meant to help us understand the
+                            time
+                            relative to any past or future date.</p>
+                        </div>
+                        <hr />
+                        <div class="time-tools-card-body">
+                          <div class="columns">
+                            <div class="column is-5">
+                              <label for="time-from-date-input">Time from...</label>
+                              <div class="time-from-date-input-container">
+                                <input class="input" type="date" id="time-from-date-input">
+                              </div>
+                            </div>
+                            <div class="column">
+                              <label for="days-input">Value</label>
+                              <div class="days-input-container">
+                                <div class="field has-addons">
+                                  <p class="control">
+                                    <input class="input" type="number" min="0" max="6" id="days-input" placeholder="0">
+                                  </p>
+                                  <div class="select">
+                                    <select>
+                                      <option>Days</option>
+                                      <option>Mon</option>
+                                      <option>Tue</option>
+                                      <option>Wed</option>
+                                      <option>Thu</option>
+                                      <option>Fri</option>
+                                      <option>Sat</option>
+                                      <option>Sun</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="button" disabled>Convert</button>
+                        </div>
+                        <hr />
+                        <div class="time-tools-card-body">
+                          <div class="columns">
+                            <div class="column is-5">
+                              <label for="time-from-date-input">Time from...</label>
+                              <div class="time-from-date-input-container">
+                                <input class="input" type="date" id="time-from-date-input">
+                              </div>
+                            </div>
+                            <div class="column">
+                              <label for="days-input">Value</label>
+                              <div class="days-input-container">
+                                <div class="field has-addons">
+                                  <p class="control">
+                                    <input class="input" type="number" min="0" max="6" id="days-input" placeholder="0">
+                                  </p>
+                                  <div class="select">
+                                    <select>
+                                      <option>Weeks</option>
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="button">Convert</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="exactly-what-is-time-container">
+              <div class="columns">
+                <div class="column is-3 other-pages-container">
+                  <h3 class="other-pages-title title">Other Pages</h3>
+                  <ul>
+                    <li><a href="#" type="button">Modern Philosophy</a></li>
+                    <li class="focus"><a href="#" type="button">Bilogical Clock</a></li>
+                    <li><a href="#" type="button">Time in Different Cultures</a></li>
+                    <li><a href="#" type="button">Ancient Philosophy</a></li>
+                    <li><a href="#" type="button">Calendars</a></li>
+                    <li><a href="#" type="button">Time in Literature</a></li>
+                    <li><a href="#" type="button">Time Perception</a></li>
+                    <li><a href="#" type="button">Aging</a></li>
+                    <li><a href="#" type="button">Relativistic Time</a></li>
+                  </ul>
+                </div>
+                <div class="column is-9">
+                  <div class="content">
+                    <h2>Exactly What Is Time?</h2>
+                    <p>Most websites and books on the subject begin with a candid admission that time is a curious and
+                      slippery concept which continues to defy definitive explanation despite hundreds, even thousands,
+                      of
+                      years of trying. We are told that time is “enigmatic” and “ineffable”, but that does not help us
+                      much in our search for the true nature of time. Nearly two and a half thousand years ago,
+                      Aristotle
+                      contended that, “time is the most unknown of all unknown things”, and arguably not much has
+                      changed
+                      since then.</p>
+                    <p>At first glance, it seems obvious, what time is: it is the ticking of the <a href="#">clock</a>,
+                      the turning of the pages of a <a href="#">calendar</a>. But really these are just incidental
+                      physical manifestations of the underlying concept. Time is a ubiquitous and essential ingredient
+                      of
+                      both everyday life and all manner of academic thought, but its fundamental nature remains
+                      tantalizingly difficult to encapsulate.</p>
+                    <p>This website looks at many different aspects of time, and, although it too may ultimately fail to
+                      “tame the beast”, it aims to give at least a reasonably comprehensive review of the many different
+                      facets that comprise this most enigmatic of subjects.</p>
+                    <p>It investigates various attempts at a <a href="#">definition of time</a>; it looks at the history
+                      and methods of <a href="#">time measurement</a>; it summarizes the different views of <a
+                        href="#">time in philosophy and religion</a> over the centuries; it considers the scientific
+                      basis
+                      of time, particularly as regards <a href="#">physics</a> and <a href="#">psychology</a> (both our
+                      perception of time and the neurology involved); and it throws in a variety of <a href="#">other
+                        aspects of time</a> and our uses of it.</p>
+                    <p>In general, the website tries to avoid excessive technical jargon, but a handy <a
+                        href="#">glossary</a> is provided with quick definitions of many of the terms used. This website
+                      It should not be considered a scholarly work, and it does not provide specific references to
+                      primary
+                      sources, but a list of general <a href="#">sources and references</a> is included for further
+                      investigation.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- /.main -->
+
+  <!-- .footer -->
+  <section class="footer">
+    <div class="container">
+      <div class="columns">
+        <div class="column left">
+          <div class="footer-left-part-container">
+            <div class="footer__navbar">
+              <a href="#" class="navbar-item">Home</a>
+              <a href="#" class="navbar-item">Privacy Policy</a>
+            </div>
+            <div class="copy-right">
+              <p>© 2023 ExactlyWhatIsTime.com - Exactly What Is Time?</p>
+            </div>
+          </div>
+        </div>
+        <div class="column right footer__on-mobile">
+          <div class="footer-right-part-container">
+            <p>Information from your device can be used to personalize your ad experience.</p>
+            <p>Do not sell or share my personal information.</p>
+            <p>A RAPTIVE PARTNER SITE</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /.footer -->
+</body>
+<script src="./js/action.js"></script>
+
+</html>
